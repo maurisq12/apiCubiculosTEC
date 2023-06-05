@@ -2,6 +2,8 @@ import express from "express";
 import config from './config'
 import estudiantesRoutes from './routes/estudiantes.routes'
 import cubiculosRoutes from './routes/cubiculos.routes'
+import asignacionesRoutes from './routes/asignaciones.routes'
+
 
 const app = express()
 
@@ -17,5 +19,6 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(estudiantesRoutes)
 app.use(cubiculosRoutes)
+app.use(asignacionesRoutes)
 
 export default app
