@@ -5,12 +5,12 @@ GET {{api}}/estudiantes
 
 ###
 
-POST {{api}}/cubiculos/add
+POST {{api}}/cubiculos/edit
 Content-Type: application/json
 
 {
     "id":2,
     "nombre": "cubiculo 321",
     "capacidad":7,
-    "estado":"Disponible"
+    "estado":1
 }

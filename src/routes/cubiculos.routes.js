@@ -5,7 +5,7 @@ import {editarCubiculo} from '../controllers/cubiculos.controller'
 const routerC = Router();
 
 routerC.get('/cubiculos', getCubiculos)
-routerC.post('/cubiculos/add', editarCubiculo)
+routerC.post('/cubiculos/edit', editarCubiculo)
 
 
 export default routerC;
